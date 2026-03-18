@@ -18,7 +18,7 @@ export default function Hero() {
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
-          src="https://i.pinimg.com/originals/0b/c8/77/0bc8772a1f37d0e41bc91a47c01b0a2e.jpg"
+          src="images/hero.jpg"
           alt="Bouquet floral élégant"
           className="w-full h-full object-cover"
         />

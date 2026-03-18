@@ -41,7 +41,7 @@ export default function About() {
             <div className="relative group">
               <div className="absolute inset-0 bg-[#8B0000]/10 rounded-lg transform rotate-3 group-hover:rotate-6 transition-transform duration-300"></div>
               <img
-                src="https://i.pinimg.com/originals/0b/c8/77/0bc8772a1f37d0e41bc91a47c01b0a2e.jpg"
+                src="images/6.jpeg"
                 alt="Création artisanale"
                 className="relative rounded-lg shadow-xl w-full object-cover h-96"
               />

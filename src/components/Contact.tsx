@@ -85,25 +85,25 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <div className="p-3 bg-[#8B0000]/5 rounded-full">
+              <a href="mailto:contact@lecharmefloral.tn" className="flex items-start gap-4 hover:bg-black/5 p-2 -m-2 rounded-xl transition-colors group cursor-pointer">
+                <div className="p-3 bg-[#8B0000]/5 rounded-full group-hover:bg-[#8B0000]/10 transition-colors">
                   <Mail size={24} className="text-[#8B0000]" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
+                  <h4 className="font-semibold text-gray-900 mb-1 group-hover:text-[#8B0000] transition-colors">Email</h4>
                   <p className="text-gray-600">contact@lecharmefloral.tn</p>
                 </div>
-              </div>
+              </a>
 
-              <div className="flex items-start gap-4">
-                <div className="p-3 bg-[#8B0000]/5 rounded-full">
+              <a href="tel:+216" className="flex items-start gap-4 hover:bg-black/5 p-2 -m-2 rounded-xl transition-colors group cursor-pointer">
+                <div className="p-3 bg-[#8B0000]/5 rounded-full group-hover:bg-[#8B0000]/10 transition-colors">
                   <Phone size={24} className="text-[#8B0000]" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Téléphone</h4>
+                  <h4 className="font-semibold text-gray-900 mb-1 group-hover:text-[#8B0000] transition-colors">Téléphone</h4>
                   <p className="text-gray-600">+216 XX XXX XXX</p>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
 

@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="flex items-center gap-2 text-sm text-white/70">
             <span>Fait avec</span>
             <Heart size={16} className="fill-current" />
-            <span>par Manel</span>
+            <span>   </span>
           </div>
           <div className="mt-6 pt-6 border-t border-white/20 w-full text-center text-sm text-white/60">
             <p>&copy; {new Date().getFullYear()} Le Charme Floral. Tous droits réservés.</p>

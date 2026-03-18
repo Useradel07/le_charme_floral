@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Flower2, Sparkles, Heart } from 'lucide-react';
+import { Flower2, Heart, Wand } from 'lucide-react';
 
 const SERVICES = [
   {
@@ -8,7 +8,7 @@ const SERVICES = [
     description: 'Des compositions fraîches et élégantes, créées avec des fleurs de saison soigneusement sélectionnées pour leur beauté et leur qualité.'
   },
   {
-    icon: Sparkles,
+    icon: Wand,
     title: 'Bouquets Artificiels',
     description: 'Des créations durables et raffinées qui conservent leur éclat dans le temps, parfaites pour une décoration permanente et sophistiquée.'
   },

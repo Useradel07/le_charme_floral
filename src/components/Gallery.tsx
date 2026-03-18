@@ -4,43 +4,43 @@ import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 const GALLERY_IMAGES = [
   {
     id: 1,
-    url: 'https://i.pinimg.com/originals/0b/c8/77/0bc8772a1f37d0e41bc91a47c01b0a2e.jpg',
+    url: 'images/2.jpeg',
     alt: 'Bouquet rouge élégant',
     size: 'large'
   },
   {
     id: 2,
-    url: 'https://i.pinimg.com/originals/0b/c8/77/0bc8772a1f37d0e41bc91a47c01b0a2e.jpg',
+    url: 'images/4.jpeg',
     alt: 'Composition florale artisanale',
     size: 'small'
   },
   {
     id: 3,
-    url: 'https://i.pinimg.com/originals/0b/c8/77/0bc8772a1f37d0e41bc91a47c01b0a2e.jpg',
+    url: 'images/5.jpeg',
     alt: 'Détail bouquet romantique',
     size: 'small'
   },
   {
     id: 4,
-    url: 'https://i.pinimg.com/originals/0b/c8/77/0bc8772a1f37d0e41bc91a47c01b0a2e.jpg',
+    url: 'images/6.jpeg',
     alt: 'Bouquet premium',
     size: 'large'
   },
   {
     id: 5,
-    url: 'https://i.pinimg.com/originals/0b/c8/77/0bc8772a1f37d0e41bc91a47c01b0a2e.jpg',
+    url: 'images/7.jpeg',
     alt: 'Création personnalisée',
     size: 'medium'
   },
   {
     id: 6,
-    url: 'https://i.pinimg.com/originals/0b/c8/77/0bc8772a1f37d0e41bc91a47c01b0a2e.jpg',
+    url: 'images/8.jpeg',
     alt: 'Arrangement floral délicat',
     size: 'medium'
   },
   {
     id: 7,
-    url: 'https://i.pinimg.com/originals/0b/c8/77/0bc8772a1f37d0e41bc91a47c01b0a2e.jpg',
+    url: 'images/9.jpeg',
     alt: 'Bouquet artisanal',
     size: 'small'
   }
