@@ -140,6 +140,7 @@ export default function Gallery() {
                 src={image.url}
                 alt={image.alt}
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
               <div className="gallery-overlay">
                 <span className="text-white text-sm font-light tracking-wide">Voir en grand</span>

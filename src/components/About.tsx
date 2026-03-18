@@ -44,6 +44,7 @@ export default function About() {
                 src="images/6.jpeg"
                 alt="Création artisanale"
                 className="relative rounded-lg shadow-xl w-full object-cover h-96"
+                loading="lazy"
               />
             </div>
           </div>
