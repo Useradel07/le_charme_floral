@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .font-serif {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-8 py-4 bg-[#8B0000] text-white font-medium tracking-wide rounded-lg
+    hover:bg-[#A11212] transform hover:scale-105 transition-all duration-300
+    shadow-lg hover:shadow-xl;
+  }
+
+  .nav-link {
+    @apply text-gray-700 hover:text-[#8B0000] transition-colors duration-300
+    font-medium tracking-wide relative;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-[#8B0000] transition-all duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .service-card {
+    @apply bg-white p-8 rounded-lg shadow-md hover:shadow-2xl
+    transition-all duration-500 hover:-translate-y-2 border border-[#C9A96E]/10;
+  }
+
+  .gallery-item {
+    @apply relative overflow-hidden rounded-lg cursor-pointer aspect-square
+    transition-all duration-700;
+  }
+
+  .gallery-item img {
+    @apply transition-transform duration-500;
+  }
+
+  .gallery-item:hover img {
+    @apply scale-110;
+  }
+
+  .gallery-overlay {
+    @apply absolute inset-0 bg-[#8B0000]/0 hover:bg-[#8B0000]/60
+    transition-all duration-300 flex items-center justify-center opacity-0 hover:opacity-100;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg
+    focus:outline-none focus:ring-2 focus:ring-[#8B0000]/20 focus:border-[#8B0000]
+    transition-all duration-300 bg-white;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
