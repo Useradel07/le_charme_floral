@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+import OptimizedImage from './OptimizedImage';
 
 const GALLERY_IMAGES = [
   {
@@ -136,7 +137,7 @@ export default function Gallery() {
               style={{ transitionDelay: `${index * 100}ms` }}
               onClick={() => openLightbox(index)}
             >
-              <img
+              <OptimizedImage
                 src={image.url}
                 alt={image.alt}
                 className="w-full h-full object-cover"

@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import OptimizedImage from './OptimizedImage';
 
 export default function About() {
   const [isVisible, setIsVisible] = useState(false);
@@ -40,7 +41,7 @@ export default function About() {
           <div className={`transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
             <div className="relative group">
               <div className="absolute inset-0 bg-[#8B0000]/10 rounded-lg transform rotate-3 group-hover:rotate-6 transition-transform duration-300"></div>
-              <img
+              <OptimizedImage
                 src="images/6.jpeg"
                 alt="Création artisanale"
                 className="relative rounded-lg shadow-xl w-full object-cover h-96"

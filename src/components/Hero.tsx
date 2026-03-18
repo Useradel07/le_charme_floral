@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import OptimizedImage from './OptimizedImage';
 
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
@@ -17,12 +18,13 @@ export default function Hero() {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <img
+        <OptimizedImage
           src="images/hero.jpg"
           alt="Bouquet floral élégant"
           className="w-full h-full object-cover"
           fetchPriority="high"
           loading="eager"
+          isHero={true}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50"></div>
       </div>
