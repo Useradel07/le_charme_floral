@@ -100,9 +100,13 @@ export default function Gallery() {
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (lightboxIndex === null) return;
-      if (e.key === 'Escape') closeLightbox();
-      if (e.key === 'ArrowRight') nextImage();
-      if (e.key === 'ArrowLeft') prevImage();
+      if (e.key === 'Escape') setLightboxIndex(null);
+      if (e.key === 'ArrowRight') {
+        setLightboxIndex((lightboxIndex + 1) % GALLERY_IMAGES.length);
+      }
+      if (e.key === 'ArrowLeft') {
+        setLightboxIndex((lightboxIndex - 1 + GALLERY_IMAGES.length) % GALLERY_IMAGES.length);
+      }
     };
 
     window.addEventListener('keydown', handleKeyDown);

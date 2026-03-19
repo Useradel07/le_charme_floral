@@ -52,7 +52,6 @@ export default function OptimizedImage({
         width={width}
         height={height}
         loading={loading}
-        // @ts-ignore
         fetchPriority={fetchPriority}
         onLoad={() => setIsLoaded(true)}
         className={`${className} ${isLoaded ? '' : 'animate-pulse bg-gray-200 text-transparent'}`}
