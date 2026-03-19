@@ -19,6 +19,13 @@
     *   **Skeleton Loading:** Smooth shimmer animations (`pulse`) display natively while images load, avoiding blank spaces.
     *   **Eager & Lazy Loading:** The LCP (Largest Contentful Paint) Hero image is eagerly preloaded, while off-screen components are lazy-loaded to save bandwidth.
 
+*   **🛡️ Robust CI/CD Workflow:** 
+    *   **Automated Pipeline:** GitHub Actions automatically lints and type-checks code on all pushes and pull requests.
+    *   **Vulnerability Scanning:** Continuous security monitoring of NPM dependencies using `npm audit`.
+    *   **Secret Detection:** Gitleaks action ensures no passwords or API tokens are accidentally committed.
+    *   **Dependabot:** Automated weekly PR generation for dependency and ecosystem updates.
+    *   **Seamless Deployment:** Native Vercel integration generates staging environments for PRs and zero-downtime production deployments for `main`.
+
 ---
 
 ## 🛠 Tech Stack
@@ -34,6 +41,11 @@
 
 **Image Optimization:**
 *   [Sharp](https://sharp.pixelplumbing.com/) - High-performance Node.js image processing
+
+**DevOps & Security:**
+*   [GitHub Actions](https://github.com/features/actions) - CI Pipeline Automation
+*   [Gitleaks](https://github.com/zricethezav/gitleaks) - Secret Scanning
+*   [Dependabot](https://github.com/dependabot) - Dependency Management
 
 ---
 
@@ -87,6 +99,10 @@ Ensure you have [Node.js](https://nodejs.org/) installed on your machine.
 
 ```text
 le_charme_floral/
+├── .github/                # DevOps configurations
+│   ├── dependabot.yml      # Automated branch security updates
+│   └── workflows/
+│       └── ci.yml          # GitHub Actions CI pipeline
 ├── public/                 # Static assets (favicon, generated images)
 │   └── images/             # Source JPEGs and optimized WebPs
 ├── scripts/
