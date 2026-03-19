@@ -91,7 +91,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1 group-hover:text-[#8B0000] transition-colors">Email</h4>
-                  <p className="text-gray-600">contact@lecharmefloral.tn</p>
+                  <p className="text-gray-600">  </p>
                 </div>
               </a>
 
