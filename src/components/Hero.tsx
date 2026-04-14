@@ -22,7 +22,7 @@ export default function Hero() {
           src="images/hero.jpg"
           alt="Bouquet floral élégant"
           className="w-full h-full object-cover"
-          fetchPriority="high"
+          fetchpriority="high"
           loading="eager"
           isHero={true}
         />
