@@ -6,7 +6,7 @@ interface OptimizedImageProps {
   className?: string;
   width?: number | string;
   height?: number | string;
-  fetchpriority?: 'high' | 'low' | 'auto';
+  fetchPriority?: 'high' | 'low' | 'auto';
   loading?: 'lazy' | 'eager';
   sizes?: string;
   isHero?: boolean;
@@ -18,7 +18,7 @@ export default function OptimizedImage({
   className = '',
   width,
   height,
-  fetchpriority,
+  fetchPriority,
   loading = 'lazy',
   sizes = '100vw',
   isHero = false
@@ -52,7 +52,7 @@ export default function OptimizedImage({
         width={width}
         height={height}
         loading={loading}
-        fetchpriority={fetchpriority}
+        fetchPriority={fetchPriority}
         onLoad={() => setIsLoaded(true)}
         className={`${className} ${isLoaded ? '' : 'animate-pulse bg-gray-200 text-transparent'}`}
       />
