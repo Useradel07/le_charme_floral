@@ -10,8 +10,8 @@ export default function Footer() {
             Créations florales artisanales à Bizerte
           </p>
           <div className="flex items-center gap-2 text-sm text-white/70">
-            <span>Fait par <a href="https://www.linkedin.com/in/adel-rjili-342191227">Adel Rjili </a></span>
-            <Heart size={16} className="fill-current" />
+            <span>Fait par <a href="https://www.linkedin.com/in/adel-rjili-342191227" > Adel Rjili </a></span>
+          
             <span>   </span>
           </div>
           <div className="mt-6 pt-6 border-t border-white/20 w-full text-center text-sm text-white/60">
